@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="Svensk guide till OrientDig spreadsheet. Bläddra bland tio kategorier hos CAFANS och jämför produktlänkar, storlekar, QC-bilder och frakt till Sverige.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#31243a">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:title" content="OrientDig spreadsheet – svensk guide till storlek, QC och frakt">
+  <meta property="og:description" content="Hitta rätt kategori hos CAFANS och se vad du kan kontrollera i en produktannons före köp.">
+  <title>OrientDig spreadsheet – svensk guide till storlek, QC och frakt</title>
+  <link rel="preconnect" href="https://image-cdn.hypb.st">
+  <style>
+    :root{color-scheme:light;--ink:#31243a;--muted:#625468;--paper:#faf7f4;--line:#ded1df;--lilac:#eee3f3;--lime:#e5edb3}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.58 system-ui,sans-serif}
+    a{color:inherit;text-underline-offset:.22em}
+    a:focus-visible,summary:focus-visible{outline:3px solid #79448e;outline-offset:4px}
+    .wrap{width:min(68rem,calc(100% - 2rem));margin-inline:auto}
+    .bar{background:var(--ink);color:white}
+    .bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding-block:.75rem}
+    .brand{font-weight:850;letter-spacing:.12em;text-decoration:none}
+    h1,h2,h3{margin:0 0 .65rem;line-height:1.12}
+    h1{font-size:clamp(2.35rem,7.2vw,5rem);letter-spacing:-.065em;text-wrap:balance;overflow-wrap:anywhere}
+    h2{font-size:clamp(1.55rem,3.8vw,2.35rem);letter-spacing:-.035em}
+    h3{font-size:1.13rem}
+    p{margin:0 0 .75rem}
+    .intro{padding-block:clamp(1.4rem,4vw,3rem) 1.1rem}
+    .intro p{max-width:66ch;color:var(--muted);margin:0}
+    .finder{display:grid;grid-template-columns:1.15fr .85fr;background:var(--lilac);border:1px solid var(--line)}
+    .finder nav{padding:clamp(.9rem,3vw,1.7rem)}
+    .categories{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:1rem}
+    .categories a{display:flex;align-items:center;justify-content:space-between;gap:.35rem;min-height:2.75rem;padding:.42rem 0;border-bottom:1px solid #cbb9d0;font-weight:680;text-decoration:none;overflow-wrap:anywhere}
+    .categories a:hover{background:#f9f0fc;text-decoration:underline}
+    figure{margin:0;min-width:0}
+    .feature{display:grid;align-content:center;background:#e6e0dc}
+    img{display:block;width:100%;height:auto;background:#ebe5ea}
+    .feature img{aspect-ratio:4/3;object-fit:cover}
+    figcaption{padding:.55rem .7rem;color:var(--muted);font-size:.86rem}
+    .section{margin-block:clamp(1.8rem,5vw,3.3rem)}
+    .guide{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+    article{padding:1rem;background:#fffdfb}
+    article p{margin:0}
+    .gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.65rem}
+    .gallery figure{background:white;border:1px solid var(--line)}
+    .gallery img{aspect-ratio:1;object-fit:contain;background:#f6f4f3}
+    .faq{padding:clamp(1rem,3.5vw,2rem);background:var(--lilac)}
+    .faq dl{margin:0}
+    dt{font-weight:750;border-top:1px solid #cbb9d0;padding-top:.75rem}
+    dd{margin:.22rem 0 .8rem}
+    footer{border-top:1px solid var(--line);padding-block:1.25rem}
+    footer p{margin:0 0 .75rem;color:var(--muted)}
+    .button{display:inline-block;background:var(--lime);padding:.55rem .85rem;font-weight:750}
+    @media(max-width:42rem){.finder{grid-template-columns:1fr}.feature img{aspect-ratio:16/10}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:29rem){.guide{grid-template-columns:1fr}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "name": "OrientDig spreadsheet – svensk guide till storlek, QC och frakt",
+    "inLanguage": "sv",
+    "mainEntity": [
+      {"@type":"Question","name":"Vad är OrientDig spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Det är en sökterm för produktlistor som samlar länkar och ibland uppgifter om storlek, färg och kontrollbilder. På den här sidan går kategorilänkarna till CAFANS."}},
+      {"@type":"Question","name":"Vad betyder QC när jag jämför produkter?","acceptedAnswer":{"@type":"Answer","text":"QC står för kvalitetskontroll. Bilder kan hjälpa dig att jämföra färg, sömmar och mått för den valda varianten. De räcker inte för att avgöra äkthet."}},
+      {"@type":"Question","name":"Hur uppskattar jag frakt till Sverige?","acceptedAnswer":{"@type":"Answer","text":"Be om en fraktuppskattning för ditt postnummer och paketets vikt och mått. Kontrollera vilka avgifter som ingår och räkna om totalsumman till svenska kronor."}},
+      {"@type":"Question","name":"Säljs produkterna på bilderna via sidan?","acceptedAnswer":{"@type":"Answer","text":"Bilderna är stilreferenser. För att se aktuella produkter och villkor öppnar du den relevanta kategorin hos CAFANS."}}
+    ]
+  }
+  </script>
+  <!-- Redaktionellt underlag: sökresultat för ”OrientDig spreadsheet”. Googles första resultatsida kunde inte verifieras direkt.
+  Tio granskade domäner och teman: orientdgsheets.com (kategorier), orientdigglobal.com (katalogsökning),
+  orientdigs.com (köpguide), orientdigi.com (produktlänkar), orientdigsheets.org (kontrollpunkter),
+  spreadsheetorientdig.com (QC-bilder), oopbuyseller.net (produktlistor), orientdigsheetnew.com (kategorinavigering),
+  repsspreadsheet.com (oberoende katalog), grails.fit (modell- och varumärkessökning). -->
+<link rel="canonical" href="https://kakobuyfinds.github.io/rhdmd/">
+</head>
+<body>
+  <header class="bar">
+    <div class="wrap"><a class="brand" href="https://www.cafans.com">CAFANS</a><span>Svensk köpguide</span></div>
+  </header>
+  <main class="wrap">
+    <section class="intro" aria-labelledby="sidtitel">
+      <h1 id="sidtitel">OrientDig spreadsheet</h1>
+      <p>Börja med rätt kategori och spara de produktlänkar du vill jämföra. Guiden visar hur du läser en storlekstabell, granskar kontrollbilder och räknar på leverans till Sverige.</p>
+    </section>
+
+    <div class="finder">
+      <nav aria-labelledby="kategorier">
+        <h2 id="kategorier">Handla efter kategori</h2>
+        <ul class="categories">
+          <li><a href="https://cafans.com/category-911-Shoes.html">Skor <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Huvtröjor och tröjor <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-913-T-Shirts.html">T-shirts <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-914-Jackets.html">Jackor <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Byxor och shorts <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-916-Headwear.html">Huvudbonader <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-917-Sets.html">Set <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Underkläder <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-919-Jersey.html">Matchtröjor <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-920-Accessories.html">Accessoarer <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
+      <figure class="feature">
+        <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2022%2F05%2Flouis-vuitton-nike-air-force-1-virgil-abloh-launch-exhibition-1.jpg?cbr=1&amp;fit=max&amp;q=78&amp;w=640" width="640" height="480" alt="Vita Louis Vuitton x Nike Air Force 1 med präglat monogram" fetchpriority="high" decoding="async">
+        <figcaption>Stilreferens · Louis Vuitton × Nike Air Force 1</figcaption>
+      </figure>
+    </div>
+
+    <section class="section" aria-labelledby="kopguide">
+      <h2 id="kopguide">Fyra kontroller före köp</h2>
+      <div class="guide">
+        <article>
+          <h3>OrientDig-produktlänkar</h3>
+          <p>Spara länken till originalannonsen och skriv upp modellnamn och artikelnummer. Jämför färgkoden i annonsen med bilderna för vald variant. Kontrollera säljarens lagerstatus, leveranstid till lagret och returvillkor innan du beställer.</p>
+        </article>
+        <article>
+          <h3>Storleksguide för skor och kläder</h3>
+          <p>Mät fotlängden i centimeter och jämför med säljarens skostorlekstabell. För en huvtröja, lägg ett plagg som passar plant och mät bröstbredd, ärmlängd och rygglängd. För byxor, jämför midjemått och innerbenslängd. För kepsar och ringar, kontrollera huvudomkrets respektive ringens innerdiameter.</p>
+        </article>
+        <article>
+          <h3>QC-bilder för OrientDig-fynd</h3>
+          <p>Be om en bild på storleksetiketten, en närbild av sömmarna och ett foto med måttband. På sneakers kan en sidobild och en bild av yttersulan göra modellen lättare att jämföra. För en jacka kan du be om bilder på dragkedjan och fodret.</p>
+        </article>
+        <article>
+          <h3>Frakt till Sverige</h3>
+          <p>Jämför fraktalternativ utifrån paketvikt, paketmått och spårning. Fråga om transportören räknar med volymvikt och vad som ingår i totalsumman. Kontrollera uppgifter om moms och hanteringsavgifter hos säljaren eller transportören innan du jämför beloppen i SEK.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="bildguide">
+      <h2 id="bildguide">Stilreferenser för plagg och accessoarer</h2>
+      <div class="gallery">
+        <figure>
+          <img src="https://en.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-embroidered-varsity-blouson--HSL89EBQV852_PM2_Front%20view.png?hei=420&amp;wid=420" width="420" height="420" loading="lazy" decoding="async" alt="Louis Vuitton-varsityjacka med broderat monogram, sedd framifrån">
+          <figcaption>Louis Vuitton · varsityjacka</figcaption>
+        </figure>
+        <figure>
+          <img src="https://cdn.theluxurycloset.com/uploads/opt/products/full/luxury-men-dior-new-accessories-p691145-002.jpg" width="420" height="420" loading="lazy" decoding="async" alt="Marinblå Dior Oblique-keps i jacquard">
+          <figcaption>Dior · jacquardkeps</figcaption>
+        </figure>
+        <figure>
+          <img src="https://www.chisholmhunter.co.uk/media/catalog/product/cache/5bd6772eb7808e2029bda666cf64b356/5/-/5-156-14-0003-d.jpg" width="420" height="420" loading="lazy" decoding="async" alt="Gucci Interlocking G-ring i silver">
+          <figcaption>Gucci · silverring</figcaption>
+        </figure>
+        <figure>
+          <img src="https://www.oliverjewellery.ca/cdn/shop/files/Hermes-Palladium-Plated-Orange-Enamel-Clic-H-Bracelet-w-Box_f80dab0b.jpg?v=1744110722&amp;width=420" width="420" height="420" loading="lazy" decoding="async" alt="Orange Hermès Clic H-armband med silverfärgat H-spänne och ask">
+          <figcaption>Hermès · emaljarmband</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section faq" aria-labelledby="fragor">
+      <h2 id="fragor">Vanliga frågor</h2>
+      <dl>
+        <dt>Vad är OrientDig spreadsheet?</dt>
+        <dd>Det är en sökterm för produktlistor som samlar länkar och ibland uppgifter om storlek, färg och kontrollbilder. På den här sidan går kategorilänkarna till CAFANS.</dd>
+        <dt>Vad betyder QC när jag jämför produkter?</dt>
+        <dd>QC står för kvalitetskontroll. Bilder kan hjälpa dig att jämföra färg, sömmar och mått för den valda varianten. De räcker inte för att avgöra äkthet.</dd>
+        <dt>Hur uppskattar jag frakt till Sverige?</dt>
+        <dd>Be om en fraktuppskattning för ditt postnummer och paketets vikt och mått. Kontrollera vilka avgifter som ingår och räkna om totalsumman till svenska kronor.</dd>
+        <dt>Säljs produkterna på bilderna via sidan?</dt>
+        <dd>Bilderna är stilreferenser. För att se aktuella produkter och villkor öppnar du den relevanta kategorin hos CAFANS.</dd>
+      </dl>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p>Fristående guide. Varumärkena anges för att identifiera de avbildade produkterna.</p>
+      <a class="button" href="https://www.cafans.com">Till CAFANS</a>
+    </div>
+  </footer>
+</body>
+</html>
